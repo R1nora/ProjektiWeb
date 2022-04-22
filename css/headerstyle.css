@@ -1,0 +1,121 @@
+*{
+  list-style: none;
+  text-decoration: none;
+}
+.checkbutn{
+  font-size: 30px;
+  color:white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  }
+#check{
+    display: none;
+  }
+
+  nav img{
+ 
+    padding-left: 2%;
+    padding-top: 5px;
+  }
+  nav{
+    height: 80px;
+    background: #063247;
+    box-shadow: 0 3px 15px rgba(0,0,0,.4);
+  }
+  nav ul{
+    padding-top: 8px;
+    float: right;
+    padding-right: 15px;
+  }
+  nav ul li{
+    display: inline-block;
+  }
+  nav ul li a{
+    color: white;
+    display: flex;
+    padding: 0 12px;
+    line-height: 70px;
+    font-size: 14px;
+    background: #063247;
+    transition: .5s;
+  }
+  nav ul li a:hover,
+  nav ul li a.active{
+    color: #23dbdb;
+  }
+  nav ul ul{
+    position: absolute;
+    top: 85px;
+    border-top: 3px solid #23dbdb;
+    opacity: 0;
+    visibility: hidden;
+  }
+  nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+  }
+  nav ul ul li{
+    width: 150px;
+    display: list-item;
+    position: relative;
+    border: 1px solid #042331;
+    border-top: none;
+  }
+  nav ul ul li a{
+    line-height: 50px;
+  }
+  nav ul ul ul{
+    border-top: none;
+  }
+  nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+  }
+  nav ul ul li a i{
+    margin-left: 45px;
+  }
+  .srch{
+    font-family: Arial;
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    color: orange;
+    border: 1px solid orange;
+    margin-top: 13px;
+    color: WHITE;
+    font-size: 16px;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}  
+.btn{
+ 
+    width: 70px;
+    height:30px;
+    background-color: orange;
+    border:2px solid orange;
+    margin-top:13px;
+    color: black;
+    font-size:15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.btn:focus{
+    
+    outline: none;
+
+}
+.srch:focus{
+    outline:none;
+}
+
+@media screen and (max-width: 1000px){
+  
+}
+
