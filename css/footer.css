@@ -7,12 +7,13 @@
   text-align: left;
   font: bold 16px sans-serif;
   padding: 55px 50px;
+  display: flex;
 }
 
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
 .footer-distributed .footer-right{
-  display: inline-block;
+  display:inline-block;
   vertical-align: top;
 }
 /* Footer left */
@@ -157,13 +158,17 @@
   margin-bottom: 5px;
 }
 @media (max-width: 880px) {
-    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+     .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
         display: block;
         width: 100%;
         margin-bottom: 40px;
         text-align: center;
     }
-    .footer-distributed .footer-center i {
+    .footer-distributed .footer-center {
         margin-left: 0;
+        margin-top: 60px;
+    }
+    .footer-distributed .footer-company-about{
+      margin-top: 70px;
     }
 } 
