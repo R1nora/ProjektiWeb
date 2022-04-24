@@ -3,138 +3,86 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
+  box-sizing: border-box;
 }
-body{
-  margin: 0px;
-  padding:0px;
-  font-family:Arial, Helvetica, sans-serif ; 
+header{
+  width: 100vw;
+  height:100vh ;
+  background-image: url('../image/background.webp');
+  background-position: bottom;
+  background-size: cover;
+  background-color: black;
+  opacity: .8;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
-.nave{
-   margin-top: 60px;;
-    text-align: center;
-    margin-left: 140px;
-    height:700px;
-    display: flex;
-    justify-content: space-around;
-    align-items: left;
+.header-content{
+  margin-bottom: 200px;
+  color: black;
+  text-align: center;
 }
-.nav-content h1{
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.header-content h2{
+  font-size: 8vmin;
 }
-.nav-content > h1{
-  
-    font-size: 4em; 
-    font-weight: bold;
-    text-decoration: none;
+.line{
+  width: 500px;
+  height: 4px;
+  background: orange;
+  margin: 10px auto;
+  border-radius: 5px;
 }
-.nav-content > p {
-    font-size: 1.7em;
-    color:rgb(230, 136, 86);
-    font-weight: bold;
-    text-decoration: none;
+.header-content h1{
+  font-size: 7vmin;
+  margin-top: 50px;
+  margin-bottom: 30px;
 
-
 }
-.nav-content .btn2{
-  margin-top: 60px;;
-    width: 300px;
-    height: 70px;
-    padding: 11px 20px;
-    background: orange;  
-    text-align: center;
-    
-    position: relative;
-    border-radius: 3px;
-    box-shadow: 1px 1px 2px;
-    
-}
-.nav-content .btn2 a{
-    font-size: 1.0em;
-    text-decoration: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    color:black;
-    letter-spacing: 0.02em;
-    
+.ctn{
+  padding: 15px 30px;
+  background-color: orange;
+  border-radius: 30px;
+  color: whitesmoke;
 }
 
-
-/*buttonat posht*/
-.downboxes{
-    margin-top: 100px;
-    margin-bottom:10px;
+ .menu-btn{
+   position:absolute;
+   top: 30px;
+   right: 30px;
+   width: 40px;
+   cursor: pointer;
+   display: none;
+ }
+@media only screen and (max-width: 850px){
+   .menu-btn{
+     display: block;
+   }
+  .navbar{
+    padding: 0;
+  }
+  .logo{
     position: absolute;
-    bottom: 0;
-
-    z-index: 55;
+    top: 30px;
+    left: 30px;
+  }
+  .nav-links{
+    flex-direction: column;
     width: 100%;
-    text-align: left;
-    background: transparent;
-}
-.downboxes ul{
-    
-    overflow: hidden;
-    text-align: center;
-    display: inline-block;
-    padding: 23px 0 24px;
-    list-style: none outside none;
-}
-.downboxes li {
-    height: 70px;
-    float: left;
-    margin: 0 27px;
-    background: #063247;
-    border-radius: 5px;
-}
-
-.number {
-  padding-left: 15px;
+    height: 100vh;
+    justify-content: center;
+    background-color: #727270;
+    margin-top: -900px ;
+    transition: all 0.5s ease;
+  }
+  .mobile-menu{
     margin-top: 0px;
-    float: left;
-    height: 70px;
-    width: 96px;
-    background: #1d689c;
-    border-radius: 3px 0 0 3px;
-    font-size: 44px;
- 
-    line-height: 66px;
-    font-weight: 300;
-    color: #fff;
+    border-bottom-right-radius: 30%;
+    margin-left: 15px;
+  }
+  .nav-links li{
+    margin: 20px auto;
+  }
 }
-.number small {
-    position: relative;
-    top: -13px;
-    font-size: 25px;
-}
-.box-text{
-    float: right;
-    width: 195px;
-    height: 66px;
-    text-align: left;
-}
-.box-text p {
-    height:66px;
-}
-.box-text strong {
-    padding: 15px 0 0 37px;
-    font-size: 18px;
-    line-height: 1.2;
-    color: #fff;
-    font-weight: 300;
-    display: block;
-}
-
-.box-text span {
-    padding-left: 37px;
-    font-size: 13px;
-    line-height: 1.2;
-    color: #fff;
-    font-weight: 300;
-}
-
-
 
 #rev{
     width:auto;
@@ -542,10 +490,10 @@ body{
         background: url(../image/about-img0.png) no-repeat left;
         background-size: 55%;
         overflow: hidden;
-        padding: 70px 0;
+        padding: 100px 0;
     }
     .inner-section{
-        width: 43%;
+        width: 55%;
         float: right;
         background-color: orange;
         padding: 120px;
@@ -571,14 +519,14 @@ body{
         border-radius: 20px;
         padding: 8px;
         width: 200px;
-        background-color: black;
+        background-color: rgb(213, 227, 170);
         color: white;
         cursor: pointer;
     }
     .skills button a{
         font-weight: 700;
         font-size: 18px;
-        color:white
+        color:rgb(11, 10, 10);
         
         
     }
@@ -597,6 +545,34 @@ body{
         font-size: 18px;
         color: black;
     }
+    @media screen and (max-width:1200px){
+      .inner-section{
+          padding: 80px;
+      }
+  }
+  @media screen and (max-width:1000px){
+      .about{
+          background-size: 100%;
+          padding: 100px 40px;
+      }
+      .inner-section{
+          width: 100%;
+      }
+  }
+  
+  @media screen and (max-width:600px){
+      .about{
+          padding: 0;
+      }
+      .inner-section{
+          padding: 60px;
+      }
+      .skills button{
+          font-size: 19px;
+          padding: 5px;
+          width: 160px;
+      }
+  }
     @media screen and (max-width:800px) {
         #header{
             display: flex;
@@ -620,7 +596,7 @@ body{
         }
     }
     .offertplace {
-      margin-top: 70px;
+        margin-top: 70px;
         height:200px;
         background-color: orange;
         display: flex;
@@ -631,11 +607,13 @@ body{
     .offerttext{
         text-align: right;
         margin-left: 1%;
+        font-size: 1vw;
     
     }
     .offerttext2{
         text-align: right;
         margin-left: 13%;
+        font-size: 1vw;
     }
     .aboveFoldButton {
         background-color: black;
@@ -878,7 +856,6 @@ body{
       }
       .container form .form-row{
         justify-content: center;
-        display: block;
         display: flex;
         margin: 32px 0;
       }
@@ -975,28 +952,25 @@ body{
         z-index: 2;
       }
       @media (max-width: 700px) {
+        .container{
+          max-width: 100% ;
+        }
         .container .text{
           font-size: 30px;
         }
-        .container form{
-          padding: 10px 0 0 0;
-        }
-       
-        form .form-row .input-data{
-          margin: 35px 0!important;
+        .form-row .input-data{
+          width: 100%;
+          margin-bottom: 15px;
         }
         .submit-btn .input-data{
-          width: 40%!important;
+          width: 70%!important;
+        }
+        .container form .form-row{
+         justify-content: space-between;
+          display: flex;
+          flex-wrap: wrap;
         }
       }
-      @media (max-height:800px) {
-        footer {
-            position: static;
-        }
-        header {
-            padding-top: 40px;
-        }
-    }
     
     
     .footer-distributed{
